@@ -5,4 +5,9 @@ app = FastAPI()
 
 @app.post("/callback")
 async def callback():
-    return {"message": "Success"}
+    return {"message": "Post Success"}
+
+
+@app.post("/get-callback")
+async def get_callback():
+    return {"message": "Get Success"}
