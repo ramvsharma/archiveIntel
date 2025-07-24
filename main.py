@@ -8,6 +8,6 @@ async def callback():
     return {"message": "Post Success"}
 
 
-@app.post("/get-callback")
+@app.get("/get-callback")
 async def get_callback():
     return {"message": "Get Success"}
