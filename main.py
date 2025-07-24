@@ -4,6 +4,5 @@ app = FastAPI()
 
 
 @app.post("/callback")
-async def callback(*args, **kwargs):
-    print(args, kwargs)
+async def callback():
     return {"message": "Success"}
